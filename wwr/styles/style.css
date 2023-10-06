@@ -126,6 +126,10 @@ footer a:hover {
     color: #001e80;
 }
 
+.social a:hover {
+    background-color: #001e80;
+}
+
 footer p {
     font-size: 1.2em;
 }
