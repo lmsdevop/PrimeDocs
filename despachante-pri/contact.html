@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Priscila Despachante</title>
     <link rel="stylesheet" href="styles/style.css">
-
 </head>
 
 <body>
@@ -33,48 +32,62 @@
         </div>
     </header>
     <main>
-        <div class="text-box">
-            <h5 class="text-box__subtitle" id="bemvindo">Bem-vindo(a)</h5>
-            <p class="text-box__title">Ao jeito mais seguro de resolver seus problemas de documentação veicular.
-            </p>
+        <div class="header-contact">
+            <h1 class="header-contact__title">Contate-nos</h1>
         </div>
-        <section class="main-quality">
-            <div class="main-quality-container">
-                <h5 class="quality__title">Como trabalhamos</h5>
-                <p class="quality__subtitle">Nossos serviços trazem consigo valores que agregam:</p>
-                <section class="quality__item">
-                    <img src="assets/img/icon-etica.png" alt="Ética">
-                    <h3>Ética</h3>
-                    <p class="quality__text">Ética com o cliente, trazendo confiança e respeito juntamente com os
-                        serviços contratados.</p>
-                </section>
-                <section class="quality__item">
-                    <img src="assets/img/icon-compromisso.png" alt="Compromisso">
-                    <h3>Compromisso</h3>
-                    <p class="quality__text">Compromisso com o cliente garantindo satisfação, atendendo às
-                        expectativas e superando as demandas do mercado.</p>
-                </section>
-                <section class="quality__item">
-                    <img src="../img/icon-qualidade.png" alt="">
-                    <h3>Qualidade</h3>
-                    <p class="quality__text">Qualidade nos serviços essencial para oferecer excelência ao cliente e
-                        vital para o sucesso e fidelidade.</p>
-                </section>
+        <div class="map">
+            <h3 class="find-us__title">Localize-nos</h3>
+            <h1 class="find-us__subtitle">Abaixo o ponto no mapa para você nos localizar</h1>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.338442686588!2d-43.558918399999996!3d-22.9008844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9be1578850dfdf%3A0x6d1ed2bf7616e071!2sCondom%C3%ADnio%20do%20Edif%C3%ADcio%20Coelho%20Neto%20-%20R.%20Barcelos%20Domingos%2C%2032%20-%20Campo%20Grande%2C%20Rio%20de%20Janeiro%20-%20RJ%2C%2023080-020!5e0!3m2!1spt-BR!2sbr!4v1684082308877!5m2!1spt-BR!2sbr"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <section class="container">
+            <form action="#" class="formulario">
+                <div class="form__group">
+                    <label class="form__label" for="nome">Nome</label><br>
+                    <input class="form__field" id="nome" type="text" name="nome">
+                </div>
+                <div class="form__group">
+                    <label class="form__label" for="celular">Celular (com Whatsapp)</label><br>
+                    <input class="form__field" id="celular" type="number" name="celular">
+                </div>
+                <div class="form__group">
+                    <label class="form__label" for="email">E-mail</label><br>
+                    <input class="form__field" id="email" type="email" name="email">
+                </div>
+                <div class="form__group">
+                    <label class="form__label" for="message">Qual serviço você precisa?</label><br>
+                    <textarea class="form__field" name="message" id="message" cols="30" rows="10"></textarea>
+                </div>
+                <div class="form__group">
+                    <label class="form__label" for="how-find">Como nos encontrou?</label><br>
+                    <input type="text" list="how-find" placeholder="Selecione">
+                    <datalist id="how-find">
+                        <option>Rede Sociais</option>
+                        <option>Indicação</option>
+                        <option>Internet</option>
+                        <option>Propaganda</option>
+                        <option>Outros</option>
+                    </datalist><br>
+                    <input class="form__bottom" type="submit" value="send">
+            </form>
+            <p class="text-center">
+                Entraremos em contato o mais breve possível! &#128515
+            </p>
+        </section>
+        <section>
+            <div class="contacts">
+                <a href=""><img src="" alt="Whatsapp1"></a>
+                <h2>Priscila</h2>
+            </div>
+            <div class="contacts">
+                <a href=""><img src="" alt="Whatsapp2"></a>
+                <h2>Thays</h2>
             </div>
         </section>
-        <section class="client-talk">
-            <div class="container">
-                <h5 class="client-talk__title">Qualidade garantida nos serviços</h5>
-                <p class="client-talk__subtitle">Veja o depoimento de nossos clientes.</p>
-                <section class="client-talk__item">
-                    <img src="../img/test-icon-foto-depoimento.png" alt="Foto da pessoa" class="client-talk__photo">
-                    <p class="client-talk__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste deserunt
-                        debitis, molestiae commodi tempora, sint corrupti et porro vitae excepturi praesentium quos
-                        nihil voluptas eum, enim magni reiciendis eos exercitationem.</p>
-                    <p class="client-talk__name">Nome pessoa - Serviço contratado</p>
-                </section>
-            </div>
-        </section>
+
     </main>
     <footer>
         <div class="footer-line-1">
