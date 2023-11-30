@@ -12,24 +12,39 @@
 
 <body>
     <header>
-        <div class="header-menu">
-            <img class="logo-menu" src="assets/img/logo-padrao.png" alt="logo">
-            <nav class="header-menu-nav header-menu-nav--closed">
-                <button class="header-menu-nav__btn">
-                    Abrir/Fechar Menu
-                </button>
-                <ul class="header-menu-nav__list">
-                    <li>
-                        <a class="header-menu-nav__item header-menu-nav__item--actual" href="index.html">Início</a>
+        <nav class="header-menu-nav">
+            <div class="logo-menu">
+                <img src="assets/img/logo-padrao.png" alt="logo">
+            </div>
+            <div class="header-menu-nav__list">
+                <ul>
+                    <li class="header-menu-nav__item header-menu-nav__item--actual">
+                        <a class="header-menu-nav__link" href="index.html">Início</a>
                     </li>
-                    <li>
-                        <a class="header-menu-nav__item" href="about.html">Sobre</a>
+                    <li class="header-menu-nav__item">
+                        <a class="header-menu-nav__link" href="about.html">Sobre</a>
                     </li>
-                    <li>
-                        <a class="header-menu-nav__item" href="contact.html">Contato</a>
+                    <li class="header-menu-nav__item">
+                        <a class="header-menu-nav__link" href="contact.html">Contato</a>
                     </li>
                 </ul>
-            </nav>
+            </div>
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="assets/img/menu-ico.svg" alt=""></button>
+            </div>
+        </nav>
+        <div class="menu-mobile">
+            <ul>
+                <li class="header-menu-nav__item">
+                    <a class="header-menu-nav__link header-menu-nav__link--actual" href="index.html">Início</a>
+                </li>
+                <li class="header-menu-nav__item">
+                    <a class="header-menu-nav__link" href="about.html">Sobre</a>
+                </li>
+                <li class="header-menu-nav__item">
+                    <a class="header-menu-nav__link" href="contact.html">Contato</a>
+                </li>
+            </ul>
         </div>
     </header>
     <main>
@@ -154,6 +169,8 @@
             © 2023 Priscila Mendonça - Despachante Documentalista. Todos os direitos reservados.
         </div>
     </footer>
+
+    <script src="scripts/script.js"></script>
 </body>
 
 </html>
