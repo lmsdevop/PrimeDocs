@@ -372,7 +372,7 @@ header {
 
     .menu-mobile .header-menu-nav__item {
         display: block;
-        margin: 12px 0;
+        margin: 50px 0;
     }
 
     .menu-mobile .header-menu-nav__link {
@@ -391,15 +391,11 @@ header {
     }
 
     .mobile-menu-icon img {
-        width: 40%;
+        width: 30%;
     }
 
     .open {
         display: block;
-    }
-
-    .close {
-        display: none;
     }
 
     .logo-menu {
