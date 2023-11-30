@@ -1,0 +1,9 @@
+{
+    "name": "despachante-pri",
+    "version": "0.1.0",
+    "homepage": "https://lmsdevop.github.io/WDD130-A4//despachante-pri/index.html",
+    "scripts": {
+        "predeploy": "yarn build",
+        "deploy": "gh-pages -d build"
+    }
+}
