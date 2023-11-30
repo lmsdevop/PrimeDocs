@@ -398,6 +398,10 @@ header {
         display: block;
     }
 
+    .close {
+        display: none;
+    }
+
     .logo-menu {
         width: 60%;
         margin: 20px auto;
