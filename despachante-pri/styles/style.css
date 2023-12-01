@@ -22,7 +22,7 @@ body {
     --paragraph-font: 'Montserrat';
 }
 
-/* MENU */
+/* ------------------------- MENU -------------------------- */
 header {
     background-color: #000000;
 }
@@ -57,19 +57,19 @@ header {
     list-style: none;
 }
 
-
-.header-menu-nav__list a:hover {
-    text-decoration: none;
-    background-color: var(--primary-color);
-    color: var(--accent2-color);
-}
-
 .header-menu-nav__link {
     font-size: 25px;
     text-decoration: none;
     padding: 27px 68px;
     color: var(--primary-color);
     font-family: 'Montserrat';
+    transition: background-color 0.3s ease;
+}
+
+.header-menu-nav__link:hover {
+    text-decoration: none;
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
 }
 
 .mobile-menu-icon {
@@ -82,7 +82,7 @@ header {
 
 
 
-/* Home Page */
+/* ---------------------------- HOME PAGE ------------------------ */
 
 .main-image {
     position: relative;
@@ -133,7 +133,7 @@ header {
 .quality__subtitle {
     margin: 0 0 45px 95px;
     width: 50%;
-    font-size: 45px;
+    font-size: 35px;
     font-family: 'Montserrat';
 
 }
@@ -184,7 +184,7 @@ header {
 .client-talk__subtitle {
     padding: 0 0 45px 95px;
     margin: 0;
-    font-size: 45px;
+    font-size: 35px;
     font-family: 'Montserrat';
     color: var(--accent2-color);
     background-color: var(--primary-color);
@@ -202,7 +202,7 @@ header {
     height: 100%;
     object-fit: cover;
     border-radius: 50%;
-    margin: 30px 10px;
+    margin: auto 10px;
 }
 
 .client-talk__container {
@@ -235,7 +235,7 @@ header {
 
 }
 
-/* Footer */
+/* -------------------------- FOOTER -------------------- */
 
 .footer-line-1__column {
     display: flex;
@@ -350,7 +350,7 @@ header {
     font-size: 18px;
 }
 
-/* ----- MEDIA QUERY ----- */
+/* ----- MEDIA QUERY HOME PAGE + FOOTER + HEADER ----- */
 @media only screen and (max-width: 768px) {
 
     .header-menu-nav {
@@ -540,14 +540,13 @@ header {
     }
 }
 
-/* -------------------------------------------- */
+/* -------------------- CAROUSEL DEPOIMENTS CSS ------------------------ */
 
 * {
     box-sizing: border-box
 }
 
 body {
-    font-family: Verdana, sans-serif;
     margin: 0
 }
 
@@ -561,14 +560,12 @@ img {
     vertical-align: middle;
 }
 
-/* Slideshow container */
 .slideshow-container {
     max-width: 1000px;
     position: relative;
     margin: auto;
 }
 
-/* Next & previous buttons */
 .prev,
 .next {
     cursor: pointer;
@@ -585,20 +582,17 @@ img {
     user-select: none;
 }
 
-/* Position the "next button" to the right */
 .next {
     right: 0;
     border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
     color: var(--accent2-color);
     background-color: var(--primary-color);
 }
 
-/* Caption text */
 .text {
     color: #f2f2f2;
     font-size: 15px;
@@ -609,7 +603,6 @@ img {
     text-align: center;
 }
 
-/* Number text (1/3 etc) */
 .numbertext {
     color: #f3f3f3;
     font-size: 12px;
@@ -618,7 +611,6 @@ img {
     top: 0;
 }
 
-/* The dots/bullets/indicators */
 .dot {
     cursor: pointer;
     height: 15px;
@@ -635,7 +627,6 @@ img {
     background-color: var(--primary-color);
 }
 
-/* Fading animation */
 .fade {
     animation-name: fade;
     animation-duration: 1.5s;
@@ -651,7 +642,6 @@ img {
     }
 }
 
-/* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
 
     .prev,
@@ -659,4 +649,251 @@ img {
     .text {
         font-size: 11px
     }
+}
+
+
+/* ------------------------ ABOUT PAGE --------------------- */
+
+.about-us {
+    text-align: center;
+    font-size: 50px;
+    margin: 80px 0;
+    font-family: 'Exo 2';
+
+}
+
+.services__title {
+    font-size: 30px;
+    font-family: 'Exo 2';
+}
+
+.services__subtitle {
+    font-size: 35px;
+    font-weight: 500;
+    font-family: 'Montserrat';
+}
+
+.services__title,
+.services__subtitle {
+    margin: 0;
+    margin-left: 95px;
+}
+
+.services-itens {
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.service__type {
+    width: 25%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.service__type h2 {
+    font-size: 28px;
+    font-family: 'Exo 2';
+
+}
+
+.service__type p {
+    font-size: 22px;
+    font-family: 'Montserrat';
+
+}
+
+.service__type img {
+    width: 100%;
+    border: 2px solid var(--primary-color);
+    border-radius: 20px;
+}
+
+.video-about {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 80px 484px 60px;
+    background-color: var(--primary-color);
+}
+
+.video-about div {
+    align-self: center;
+    text-align: right;
+}
+
+.video-about__text {
+    margin: 0 20px;
+    grid-row: 1;
+    grid-column: 2;
+    font-family: 'Exo 2';
+    font-size: 30px;
+    align-self: center;
+    color: var(--accent2-color)
+}
+
+.video-about img {
+    width: 15%;
+}
+
+.video-embedded {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.contract-us {
+    margin: 50px auto;
+    text-align: center;
+    height: 60px;
+}
+
+.contract-us button {
+    width: 30%;
+    height: 100%;
+    background-color: var(--primary-color);
+    border-radius: 50px;
+    border-color: transparent;
+    font-family: 'Montserrat';
+    font-size: 20px;
+    color: var(--accent2-color);
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.6s ease;
+}
+
+.contract-us button:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+@media only screen and (max-width: 768px) {
+    .services-itens {
+        flex-direction: column;
+    }
+
+    .service__type {
+        margin-top: 50px;
+    }
+}
+
+
+/* ------------------- CONTACT PAGE ----------------- */
+.header-contact__title {
+    text-align: center;
+    font-size: 50px;
+    margin: 80px 0;
+    font-family: 'Exo 2';
+}
+
+.map {
+    text-align: center;
+}
+
+.map h1,
+.map h3 {
+    margin: 0;
+    margin-left: 95px;
+}
+
+.map h3 {
+    font-size: 30px;
+    text-align: left;
+    font-family: 'Exo 2';
+
+}
+
+.map h1 {
+    font-size: 35px;
+    text-align: left;
+    margin-bottom: 30px;
+    font-family: 'Montserrat';
+    font-weight: 500;
+
+}
+
+form {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+
+.forms-title {
+    display: flex;
+    justify-content: center;
+
+}
+
+.forms-title h2 {
+    margin-top: 50px;
+    text-align: center;
+    font-family: 'Exo 2';
+    width: 60%;
+    font-size: 30px;
+}
+
+.form-group {
+    display: flex;
+    justify-content: center;
+    width: 60%;
+}
+
+.form__label {
+    width: 30%;
+    align-self: center;
+    margin-right: 20px;
+    text-align: right;
+    font-family: 'Montserrat';
+
+}
+
+.form-control {
+    margin: 5px 0;
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out
+}
+
+.btn {
+    margin-top: 10px;
+    width: 20%;
+    font-family: "Montserrat";
+    color: var(--accent2-color);
+    background-color: var(--primary-color);
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
 }
