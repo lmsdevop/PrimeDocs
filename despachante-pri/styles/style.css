@@ -742,6 +742,7 @@ img {
 .video-size {
     width: 860px;
     height: 483.74px;
+    border: 0;
 }
 
 .video-about img {
@@ -754,14 +755,17 @@ img {
 }
 
 .contract-us {
+    display: flex;
+    justify-content: center;
     margin: 50px auto;
     text-align: center;
     height: 60px;
 }
 
-.contract-us button {
+.contract-us a {
     width: 30%;
     height: 100%;
+    align-items: center;
     background-color: var(--primary-color);
     border-radius: 50px;
     border-color: transparent;
@@ -773,7 +777,12 @@ img {
     transition: background-color 0.6s ease;
 }
 
-.contract-us button:hover {
+.contract-us a {
+    color: var(--accent2-color);
+    text-decoration: none;
+}
+
+.contract-us a:hover {
     background-color: var(--secondary-color);
     color: var(--primary-color);
 }
@@ -784,7 +793,6 @@ img {
         font-size: 30px;
         margin: 50px 0;
         font-family: 'Exo 2';
-
     }
 
     .services {
