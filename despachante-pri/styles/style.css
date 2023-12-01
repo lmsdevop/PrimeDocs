@@ -708,6 +708,13 @@ img {
     width: 100%;
     border: 2px solid var(--primary-color);
     border-radius: 20px;
+    -webkit-transition: -webkit-transform .5s ease;
+    transition: transform .5s ease;
+}
+
+.service__type:hover img {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 .video-about {
