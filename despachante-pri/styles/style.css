@@ -739,6 +739,11 @@ img {
     color: var(--accent2-color)
 }
 
+.video-size {
+    width: 860px;
+    height: 483.74px;
+}
+
 .video-about img {
     width: 15%;
 }
@@ -773,15 +778,87 @@ img {
     color: var(--primary-color);
 }
 
+/* ---- ABOUT PAGE MEDIA QUERY ---- */
 @media only screen and (max-width: 768px) {
+    .about-us {
+        font-size: 30px;
+        margin: 50px 0;
+        font-family: 'Exo 2';
+
+    }
+
+    .services {
+        text-align: center;
+    }
+
+    .services__title {
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .services__subtitle {
+        text-align: left;
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .services__title,
+    .services__subtitle {
+        margin: 0;
+        margin-left: 20px;
+    }
+
     .services-itens {
         flex-direction: column;
     }
 
     .service__type {
-        margin-top: 50px;
+        width: 75%;
+        padding-bottom: 50px;
+        margin: 0 auto;
+    }
+
+    .service__type img {
+        width: 80%;
+    }
+
+    .service__type h2 {
+        font-size: 20px;
+    }
+
+    .service__type p {
+        font-size: 15px;
+    }
+
+    .video-about {
+        grid-template-columns: 0.2fr 3fr 0.2fr;
+        grid-template-rows: 50px 200px 50px;
+    }
+
+    .video-size {
+        width: 100%;
+        height: 200px;
+    }
+
+    .video-play-img {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .video-about img {
+        width: 8%;
+    }
+
+    .video-about__text {
+        font-size: 20px;
+    }
+
+    .contract-us button {
+        width: 40%;
+        font-size: 17px;
     }
 }
+
 
 
 /* ------------------- CONTACT PAGE ----------------- */
