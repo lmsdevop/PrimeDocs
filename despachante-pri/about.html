@@ -29,27 +29,18 @@
                 </ul>
             </div>
             <div class="mobile-menu-icon">
-                <button onclick="menuShow()"><img class="icon" src="assets/img/menu-ico.svg" alt=""></button>
+                <button onclick="openNav()"><img class="icon" src="assets/img/menu-ico.svg" alt=""></button>
             </div>
         </nav>
-        <div class="menu-mobile">
-            <ul>
-                <li class="header-menu-nav__item">
-                    <a class="header-menu-nav__link header-menu-nav__link--actual" href="index.html">Início</a>
-                </li>
-                <li class="header-menu-nav__item">
-                    <a class="header-menu-nav__link" href="about.html">Sobre</a>
-                </li>
-                <li class="header-menu-nav__item">
-                    <a class="header-menu-nav__link" href="contact.html">Contato</a>
-                </li>
-            </ul>
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <a href="index.html">Início</a>
+                <a href="about.html">Sobre</a>
+                <a href="contact.html">Contato</a>
+            </div>
         </div>
     </header>
-
-
-
-
     <main>
         <section class="services">
             <h1 class="about-us">Sobre Nós</h1>
@@ -58,21 +49,23 @@
             <div class="services-itens">
                 <div class="service__type">
                     <img src="assets/img/servicos/vistoria-veicular.png" alt="" class="services__item">
-                    <h2>Vistoria Veícular</h2>
-                    <p>Não deixe de legalizar sua van, você pode ter ela apreendida e ainda pagar multa. Ande com sua
-                        Van completamente legalizada</p>
+                    <h2>Licenciamento Veícular</h2>
+                    <p>Renove seu licenciamento agora! Sem burocracia, sem preocupações. Mantenha seu veículo
+                        regularizado e pronto para rodar com tranquilidade. Conte conosco para facilitar esse processo.
+                        Sua conveniência é nossa prioridade!</p>
                 </div>
                 <div class="service__type">
                     <img src="assets/img/servicos/transp-van.png" alt="" class="services__item">
                     <h2>Licenciamento de Van</h2>
-                    <p>Não deixe de legalizar sua van, você pode ter ela apreendida e ainda pagar multa. Ande com sua
-                        Van completamente legalizada</p>
+                    <p>Renove já o licenciamento da sua van! Rápido, fácil e sem complicações. Mantenha seu negócio em
+                        movimento com tranquilidade. Estamos aqui para simplificar tudo para você. Sua mobilidade é
+                        nossa prioridade!</p>
                 </div>
                 <div class="service__type">
                     <img src="assets/img/servicos/emplacamento-veicular.png" alt="" class="services__item">
                     <h2>Emplacamento</h2>
-                    <p>Não deixe de legalizar sua van, você pode ter ela apreendida e ainda pagar multa. Ande com sua
-                        Van completamente legalizada</p>
+                    <p>Emplacamento sem complicações! Rápido, fácil e eficiente. Deixe seu veículo pronto para a estrada
+                        com a gente. Sua praticidade é nossa prioridade!</p>
                 </div>
             </div>
         </section>

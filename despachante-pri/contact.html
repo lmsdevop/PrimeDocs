@@ -31,21 +31,16 @@
                 </ul>
             </div>
             <div class="mobile-menu-icon">
-                <button onclick="menuShow()"><img class="icon" src="assets/img/menu-ico.svg" alt=""></button>
+                <button onclick="openNav()"><img class="icon" src="assets/img/menu-ico.svg" alt=""></button>
             </div>
         </nav>
-        <div class="menu-mobile">
-            <ul>
-                <li class="header-menu-nav__item">
-                    <a class="header-menu-nav__link header-menu-nav__link--actual" href="index.html">Início</a>
-                </li>
-                <li class="header-menu-nav__item">
-                    <a class="header-menu-nav__link" href="about.html">Sobre</a>
-                </li>
-                <li class="header-menu-nav__item">
-                    <a class="header-menu-nav__link" href="contact.html">Contato</a>
-                </li>
-            </ul>
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <a href="index.html">Início</a>
+                <a href="about.html">Sobre</a>
+                <a href="contact.html">Contato</a>
+            </div>
         </div>
     </header>
     <main>
@@ -57,12 +52,12 @@
             <h1 class="find-us__subtitle">Abaixo o ponto no mapa para você nos localizar</h1>
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.338442686588!2d-43.558918399999996!3d-22.9008844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9be1578850dfdf%3A0x6d1ed2bf7616e071!2sCondom%C3%ADnio%20do%20Edif%C3%ADcio%20Coelho%20Neto%20-%20R.%20Barcelos%20Domingos%2C%2032%20-%20Campo%20Grande%2C%20Rio%20de%20Janeiro%20-%20RJ%2C%2023080-020!5e0!3m2!1spt-BR!2sbr!4v1684082308877!5m2!1spt-BR!2sbr"
-                width="90%" height="600" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                class="map-google"></iframe>
         </div>
         <section class="forms-container" id="forms">
             <div class="forms-title">
-                <h2>Deixe aqui uma mensagem para solicitando que entremos em contatos, sugestão, elogio ou critica sobre
+                <h2>Envie-nos uma mensagem solicitando que entremos em contatos, sugestão, elogio ou critica sobre
                     nossos serviços</h2>
             </div>
             <form action="#">
@@ -94,7 +89,7 @@
                     </select><br>
                 </div>
 
-                <div class="form-group"><button type="submit" class="btn">Enviar</button></div>
+                <div class="form-group btn"><button type="submit">Enviar</button></div>
 
 
             </form>
@@ -103,13 +98,13 @@
                 Entraremos em contato o mais breve possível! &#128515
             </p>
         </section>
-        <section>
+        <section class="employees">
             <div class="contacts">
-                <a href=""><img src="" alt="Whatsapp1"></a>
+                <a href=""><img src="assets/img/priscila.PNG" alt="Whatsapp1"></a>
                 <h2>Priscila</h2>
             </div>
             <div class="contacts">
-                <a href=""><img src="" alt="Whatsapp2"></a>
+                <a href=""><img src="assets/img/thays.PNG" alt="Whatsapp2"></a>
                 <h2>Thays</h2>
             </div>
         </section>

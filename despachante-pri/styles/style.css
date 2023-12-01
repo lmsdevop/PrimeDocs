@@ -76,13 +76,10 @@ header {
     display: none;
 }
 
-.menu-mobile {
-    display: none;
-}
 
-
-
-/* ---------------------------- HOME PAGE ------------------------ */
+/* ---------------------------------------------------------------------------------------------- */
+/* ------------------------------------------- HOME PAGE ---------------------------------------- */
+/* ---------------------------------------------------------------------------------------------- */
 
 .main-image {
     position: relative;
@@ -156,6 +153,7 @@ header {
     width: 70%;
     max-width: 100%;
     height: auto;
+    border-radius: 1000px;
 }
 
 .quality__item h3 {
@@ -370,16 +368,6 @@ header {
         padding: 0;
     }
 
-    .menu-mobile .header-menu-nav__item {
-        display: block;
-        margin: 50px 0;
-    }
-
-    .menu-mobile .header-menu-nav__link {
-        padding: 0;
-        font-size: 20px;
-    }
-
     .mobile-menu-icon {
         display: block;
     }
@@ -456,6 +444,10 @@ header {
 
     .quality__item img {
         width: 50%;
+    }
+
+    .quality__item h3 {
+        font-size: 25px;
     }
 
     .client-talk__title {
@@ -642,6 +634,23 @@ img {
     }
 }
 
+@media only screen and (max-width: 768px) {
+    .mySlides {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .client-talk__name {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .client-talk__text {
+        font-size: 20px;
+    }
+}
+
 @media only screen and (max-width: 300px) {
 
     .prev,
@@ -649,10 +658,12 @@ img {
     .text {
         font-size: 11px
     }
+
 }
 
-
-/* ------------------------ ABOUT PAGE --------------------- */
+/* ---------------------------------------------------------------------------------------------- */
+/* ------------------------------------------- ABOUT PAGE --------------------------------------- */
+/* ---------------------------------------------------------------------------------------------- */
 
 .about-us {
     text-align: center;
@@ -682,8 +693,12 @@ img {
 .services-itens {
     margin: 50px auto;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-around;
+}
+
+.services__item img {
+    height: 100%;
+    margin-bottom: 20px;
 }
 
 .service__type {
@@ -699,7 +714,7 @@ img {
 }
 
 .service__type p {
-    font-size: 22px;
+    font-size: 20px;
     font-family: 'Montserrat';
 
 }
@@ -872,13 +887,19 @@ img {
 }
 
 
-
-/* ------------------- CONTACT PAGE ----------------- */
+/* ---------------------------------------------------------------------------------------------- */
+/* ------------------------------------------- CONTACT PAGE ------------------------------------- */
+/* ---------------------------------------------------------------------------------------------- */
 .header-contact__title {
     text-align: center;
     font-size: 50px;
     margin: 80px 0;
     font-family: 'Exo 2';
+}
+
+.map-google {
+    width: 90%;
+    height: 600px;
 }
 
 .map {
@@ -992,4 +1013,167 @@ form {
 .btn:hover {
     background-color: var(--secondary-color);
     color: var(--primary-color);
+}
+
+.btn button {
+    background-color: transparent;
+    color: var(--accent2-color);
+    border: 0;
+    font-size: 15px;
+    font-family: 'Montserrat';
+}
+
+.text-center {
+    text-align: center;
+    font-family: 'Montserrat';
+    font-size: 20px;
+}
+
+.employees {
+    margin: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.contacts {
+    text-align: center;
+}
+
+.contacts h2 {
+    font-family: 'Montserrat';
+    font-weight: 500;
+}
+
+.contacts img {
+    width: 40%;
+    border-radius: 1000px;
+}
+
+@media only screen and (max-width: 768px) {
+    .header-contact__title {
+        font-size: 30px;
+        margin: 50px 0;
+    }
+
+    .map-google {
+        height: 300px;
+    }
+
+    .map h1,
+    .map h3 {
+        margin-left: 20px
+    }
+
+    .map h1 {
+        font-size: 20px;
+    }
+
+    .map h3 {
+        font-size: 15px;
+    }
+
+    .find-us__subtitle {
+        width: 90%;
+    }
+
+    .forms-title {
+        width: 100%;
+    }
+
+    .forms-title h2 {
+        width: 90%;
+        font-size: 20px;
+    }
+
+    .form-group {
+        width: 90%;
+        justify-content: space-between;
+    }
+
+    .form__label {
+        margin-right: 10px;
+        font-size: 15px;
+        text-align: left;
+    }
+
+    .form-control {
+        width: 80%;
+    }
+
+    .text-center {
+        font-size: 18px;
+    }
+
+    .employees {
+        flex-direction: column;
+    }
+
+    .contacts {
+        margin: 20px 0;
+    }
+
+    .contacts img {
+        width: 70%;
+    }
+}
+
+/*---------------------------- NEW MENU OVERLAY ----------------------*/
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow-y: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    margin: 40px 0;
+    text-decoration: none;
+    font-size: 36px;
+    font-family: 'Montserrat';
+    color: var(--primary-color);
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+    .overlay {
+        overflow-y: auto;
+    }
+
+    .overlay a {
+        font-size: 20px
+    }
+
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
 }

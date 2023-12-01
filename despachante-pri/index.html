@@ -30,21 +30,16 @@
                 </ul>
             </div>
             <div class="mobile-menu-icon">
-                <button onclick="menuShow()"><img class="icon" src="assets/img/menu-ico.svg" alt=""></button>
+                <button onclick="openNav()"><img class="icon" src="assets/img/menu-ico.svg" alt=""></button>
             </div>
         </nav>
-        <div class="menu-mobile">
-            <ul>
-                <li class="header-menu-nav__item">
-                    <a class="header-menu-nav__link header-menu-nav__link--actual" href="index.html">Início</a>
-                </li>
-                <li class="header-menu-nav__item">
-                    <a class="header-menu-nav__link" href="about.html">Sobre</a>
-                </li>
-                <li class="header-menu-nav__item">
-                    <a class="header-menu-nav__link" href="contact.html">Contato</a>
-                </li>
-            </ul>
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <a href="index.html">Início</a>
+                <a href="about.html">Sobre</a>
+                <a href="contact.html">Contato</a>
+            </div>
         </div>
     </header>
     <main>
@@ -97,7 +92,8 @@
                                     <img src="assets/img/icon-estrela-depoimento.png" alt="estrela">
                                     <img src="assets/img/icon-estrela-depoimento.png" alt="estrela">
                                 </div>
-                                <p class="client-talk__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                <p class="client-talk__text">Lorem ipsum dolor sit, amet consectetur adipisicing
+                                    elit.
                                     Iste
                                     deserunt
                                     debitis, molestiae commodi tempora, sint corrupti et porro vitae excepturi
