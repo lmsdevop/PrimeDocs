@@ -757,6 +757,7 @@ img {
 .contract-us {
     display: flex;
     justify-content: center;
+    align-items: center;
     margin: 50px auto;
     text-align: center;
     height: 60px;
@@ -765,8 +766,12 @@ img {
 .contract-us a {
     width: 30%;
     height: 100%;
+    display: flex;
+    justify-content: center;
     align-items: center;
     background-color: var(--primary-color);
+    color: var(--accent2-color);
+    text-decoration: none;
     border-radius: 50px;
     border-color: transparent;
     font-family: 'Montserrat';
@@ -777,14 +782,13 @@ img {
     transition: background-color 0.6s ease;
 }
 
-.contract-us a {
-    color: var(--accent2-color);
-    text-decoration: none;
-}
-
 .contract-us a:hover {
     background-color: var(--secondary-color);
     color: var(--primary-color);
+}
+
+.contract-us a p {
+    margin: 0;
 }
 
 /* ---- ABOUT PAGE MEDIA QUERY ---- */
@@ -861,7 +865,7 @@ img {
         font-size: 20px;
     }
 
-    .contract-us button {
+    .contract-us a {
         width: 40%;
         font-size: 17px;
     }
