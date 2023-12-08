@@ -196,15 +196,15 @@ header {
 }
 
 .client-talk__photo {
-    width: 300px;
-    height: 100%;
+    width: 200px;
+    height: 200px;
     object-fit: cover;
     border-radius: 50%;
     margin: auto 10px;
 }
 
 .client-talk__container {
-    width: 30%;
+    width: 40%;
     margin-left: 100px;
 }
 
